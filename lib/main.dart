@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'User preferences',
-      initialRoute: HomePage.routName,
+      initialRoute: HomePage.routeName,
       routes: {
-        HomePage.routName     : (BuildContext context) => HomePage(),
-        SettingsPage.routName : (BuildContext context) => SettingsPage(),
+        HomePage.routeName     : (BuildContext context) => HomePage(),
+        SettingsPage.routeName : (BuildContext context) => SettingsPage(),
       },
     );
   }

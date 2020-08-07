@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:app_user_preferences/src/widgets/menu_widget.dart';
+
 class SettingsPage extends StatelessWidget {
 
-  static final String routName = 'settings';
+  static final String routeName = 'settings';
   
   @override
   Widget build(BuildContext context) {
@@ -10,6 +12,7 @@ class SettingsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Ajustes'),
       ),
+      drawer: MenuWidget(),
       body: Column(
           children: [
             Text('Ajustes Page'),
