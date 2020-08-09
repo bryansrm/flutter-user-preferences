@@ -21,6 +21,7 @@ class UserPreferences {
   // int _genero;<  
   // String _nombre;
 
+  // GET y SET genero
   get genero{
     return _prefs.getInt('genero') ?? 2;
   }
@@ -34,6 +35,7 @@ class UserPreferences {
     return genero == 1 ? 'Masculino' : 'Femenino';
   }
 
+  // GET y SET color secundario
   get colorSecundario{
     return _prefs.getBool('colorSecundario') ?? false;
   }
@@ -42,12 +44,22 @@ class UserPreferences {
     _prefs.setBool('colorSecundario', value);
   }
 
+  // GET y SET nombre de usuario
   get nombreUsuario{
     return _prefs.getString('nombreUsuario') ?? '';
   }
 
   set nombreUsuario(String value){
     _prefs.setString('nombreUsuario', value);
+  }
+
+  // GET y SET ultima pagina
+  get lastPage{
+    return _prefs.getString('lastPage') ?? 'home';
+  }
+
+  set lastPage(String value){
+    _prefs.setString('lastPage', value);
   }
 
 }

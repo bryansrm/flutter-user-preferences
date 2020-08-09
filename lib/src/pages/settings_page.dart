@@ -15,13 +15,13 @@ class _SettingsPageState extends State<SettingsPage> {
 
   bool _colorSecundario;
   int _genero;
-  String _nombre;
 
   TextEditingController _textController;
   final prefs = new UserPreferences();
 
   void initState(){
     super.initState();
+    prefs.lastPage = SettingsPage.routeName;
 
     _genero = prefs.genero;
     _colorSecundario = prefs.colorSecundario;
