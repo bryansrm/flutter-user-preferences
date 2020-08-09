@@ -29,4 +29,25 @@ class UserPreferences {
     _prefs.setInt('genero', value);
   }
 
+  get nombreGenero{
+    int genero = _prefs.getInt('genero') ?? 1;
+    return genero == 1 ? 'Masculino' : 'Femenino';
+  }
+
+  get colorSecundario{
+    return _prefs.getBool('colorSecundario') ?? false;
+  }
+
+  set colorSecundario(bool value){
+    _prefs.setBool('colorSecundario', value);
+  }
+
+  get nombreUsuario{
+    return _prefs.getString('nombreUsuario') ?? '';
+  }
+
+  set nombreUsuario(String value){
+    _prefs.setString('nombreUsuario', value);
+  }
+
 }
