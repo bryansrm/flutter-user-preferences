@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:app_user_preferences/src/pages/settings_page.dart';
 import 'package:app_user_preferences/src/widgets/menu_widget.dart';
 
 class HomePage extends StatelessWidget {
